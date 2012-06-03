@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MvcImage.ViewModels.UserListDashboard>
+
+@{
+    ViewBag.Title = "UserListDashboard";
+}
+
+<h2>Users Dashboard</h2>
+
+<table>
+<tr>
+    <th>
+        <div class="display-label">UniqueId</div>
+    </th>
+    <th>
+        <div class="display-label">UserName</div>
+    </th>
+    <th>
+        <div class="display-label">Last Logged In</div>
+    </th>
+    <th>
+        <div class="display-label">Image</div>
+    </th>
+    <th>
+        <div class="display-label">Thumbnail</div>
+    </th>
+</tr>
+    @Html.DisplayForModel();</table>
+
+
+<p>    @Html.ActionLink("Back to List", "Index") </p>

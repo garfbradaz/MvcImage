@@ -1,0 +1,45 @@
+﻿@model MvcImage.Models.ImageModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ImageModel</legend>
+
+    <div class="display-label">TableLink</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TableLink)
+    </div>
+
+    <div class="display-label">RecordStatus</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordStatus)
+    </div>
+
+    <div class="display-label">RecordCreatedDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordCreatedDate)
+    </div>
+
+    <div class="display-label">RecordAmendedDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordAmendedDate)
+    </div>
+
+    <div class="display-label">FileSize</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileSize)
+    </div>
+
+    <div class="display-label">FileName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.UniqueId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

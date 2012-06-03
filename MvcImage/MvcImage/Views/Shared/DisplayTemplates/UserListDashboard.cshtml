@@ -1,0 +1,38 @@
+﻿@model MvcImage.ViewModels.UserListDashboard
+@using Bradaz.OpenSource.MVC.HTMLHelpers
+<!DOCTYPE html>
+
+
+<tr>
+    <td>
+    <div class="display-field">
+        @Model.UniqueId
+    </div>
+    </td>
+
+    <td>
+    <div class="display-field">
+        @Model.UserName
+    </div>
+    </td>
+
+    <td>
+    <div class="display-field">
+        @Model.LastActivityDate
+    </div>
+    </td>
+
+    <td>
+    <div class="display-field">
+        @Html.DisplayImageFor(p => p.UniqueId,tableLink:true)
+    </div>
+    </td>
+
+    <td>
+    <div class="display-field">
+        @Html.DisplayImageFor(p => p.UniqueId,tableLink:true,thumbnail:true)
+    </div>
+    </td>
+ </tr>
+
+

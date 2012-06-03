@@ -1,0 +1,8 @@
+﻿Version Change Log.
+*------------------
+*
+Alpha 0.0.2 Release:
+**jquery-previewimage.js - Thumbnail support added.
+**ImageController - Again added support for Thumbnails to pass back a sized image (AjaxSubmit and ImageLoad Action Methods)..
+**Register View now has been spruced up abit! 
+**ImageModel - Can save the Thumbnail to the DB.

@@ -1,0 +1,48 @@
+﻿@model MvcImage.Models.ImageModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>ImageModel</legend>
+
+    <div class="display-label">TableLink</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TableLink)
+    </div>
+
+    <div class="display-label">RecordStatus</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordStatus)
+    </div>
+
+    <div class="display-label">RecordCreatedDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordCreatedDate)
+    </div>
+
+    <div class="display-label">RecordAmendedDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RecordAmendedDate)
+    </div>
+
+    <div class="display-label">FileSize</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileSize)
+    </div>
+
+    <div class="display-label">FileName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileName)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

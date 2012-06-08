@@ -1,1 +1,9 @@
-f
+This is a MVC3 ASP.NET Project to show how to:
+
+a) Handle Images
+b) Preview Images using JQuery/AJAX
+c) Upload images to a Database using Entity Framework and SQL Server Express
+
+This Project has been created in conjunction with blog posts I have written:
+
+http://garfbradazweb.wordpress.com/2012/02/26/mvc-3-mvcimage-project-its-alive/
